@@ -77,7 +77,7 @@ Before running the game, you need to make sure you have the following installed:
 # Comparison
 Event-Based Architecture and Object-Oriented Architecture are two distinct architectural paradigms with different design principles, and each has its own strengths and use cases. Let's elaborate on the differences between these architectures and explore the rationales for choosing one over the other in a given context.
 
-# Event-Based Architecture:
+### Event-Based Architecture:
 
 **Design Principles:**
 - Event-driven: Event-Based Architecture is designed around the concept of events. Components or objects interact by sending and receiving events.
