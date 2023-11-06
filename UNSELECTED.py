@@ -2,11 +2,6 @@ import pygame
 import sys
 import random
 
-from pygame.examples.moveit import WIDTH, HEIGHT
-
-WIDTH, HEIGHT = 600, 600
-
-
 class Snake:
     def __init__(self, x, y):
         self.snake_speed = 5
@@ -56,7 +51,7 @@ class Snake:
 
     def draw(self, screen):
         for i, segment in enumerate(self.snake_body):
-            if i == len(self.snake_body) - 1:
+            if i == 0:  # Draw head differently
                 pygame.draw.rect(screen, (92, 121, 135), (segment[0], segment[1], 10, 10))
             else:
                 pygame.draw.rect(screen, (217, 227, 229), (segment[0], segment[1], 10, 10))
@@ -201,5 +196,6 @@ class SnakeGame:
 
 # 游戏主循环
 if __name__ == "__main__":
+    WIDTH, HEIGHT = 600, 600
     snake_game = SnakeGame(WIDTH, HEIGHT)
     snake_game.run()
